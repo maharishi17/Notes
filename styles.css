@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #00adad;
+  background-image: url("https://www.transparenttextures.com/patterns/crossword.png");
+  padding: 0 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: hwb(148 15% 21%);
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  color: #2a2a2a;
+  font-family: "McLaren", cursive;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-icon {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+  transition: background 0.3s;
+}
+
+footer:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+footer p {
+  color: #ccc;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+input, textarea {
+  font-size: 1.5em; /* Increased font size for better readability */
+  padding: 15px; /* Increased padding for a more premium feel */
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+  overflow: auto; /* Ensure text remains visible if it overflows */
+  min-height: 50px; /* Ensure input box has a minimum height */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00adad;
+}
+
+.notes-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 240px;
+  margin: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #333;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.note p {
+  font-size: 1em;
+}
+
+/* Premium Button Styles */
+button {
+  background-color: #00adad;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #007f7f;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #005757;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  footer p {
+    font-size: 1.3em;
+  }
+
+  input, textarea {
+    font-size: 1.2em; /* Slightly smaller for mobile, but still readable */
+    padding: 12px;
+  }
+
+  .note {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 1.2em;
+  }
+
+  input, textarea {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .note {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
