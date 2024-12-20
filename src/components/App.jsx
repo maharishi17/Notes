@@ -36,8 +36,11 @@ function App() {
         ))}
         <div ref={endOfNotesRef} />
       </div>
+      <div>
       <Footer />
+      </div>
     </div>
+
   );
 }
 

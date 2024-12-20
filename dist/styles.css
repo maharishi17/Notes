@@ -43,17 +43,13 @@ body {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
-  padding: 10px 10px;
+  padding: 20px 0;
+  margin-top: auto;
   border-top: 1px solid #ccc;
   border-radius: 0 0 8px 8px;
   transition: background 0.3s;
-  margin-top: 2%;
 }
 
 footer:hover {
@@ -62,10 +58,9 @@ footer:hover {
 
 footer p {
   color: #ccc;
-  font-size: 1em;
-  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.5;
 }
-
 
 input, textarea {
   font-size: 1.5em; /* Increased font size for better readability */
@@ -103,7 +98,6 @@ input:focus, textarea:focus {
   margin: 16px;
   transition: transform 0.3s, box-shadow 0.3s;
   color: #333;
-
 }
 
 .note:hover {
@@ -111,18 +105,14 @@ input:focus, textarea:focus {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.note h1, .note p {
-  font-size: 1.2em; /* Consistent size for both */
+.note h1 {
+  font-size: 1.2em;
   margin-bottom: 6px;
   color: #333;
-  line-height: 1.4; /* Improves readability */
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .note h1, .note p {
-    font-size: 1em; /* Slightly smaller on mobile for better fit */
-  }
+.note p {
+  font-size: 1em;
 }
 
 /* Premium Button Styles */

@@ -3,8 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "homepage": "https://maharishi17.github.io/Notes",
-
-  
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
